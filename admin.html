@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Administração de Usuários</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      padding: 30px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #007bff;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    input, button {
+      padding: 8px;
+      margin: 5px 0;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    button {
+      cursor: pointer;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .delete-btn {
+      background-color: #dc3545;
+    }
+
+    .form-section {
+      max-width: 400px;
+      margin: auto;
+    }
+
+    .back {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+  <h1>Gerenciar Usuários</h1>
+
+  <table id="userTable">
+    <thead>
+      <tr>
+        <th>Usuário</th>
+        <th>Link do Painel</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <div class="form-section">
+    <h3>Adicionar / Editar Usuário</h3>
+    <input type="text" id="newUser" placeholder="Nome do usuário">
+    <input type="text" id="newPass" placeholder="Senha">
+    <input type="text" id="newLink" placeholder="Link do painel Power BI">
+    <button onclick="addOrUpdateUser()">Salvar</button>
+  </div>
+
+  <a href="login.html" class="back">← Voltar para login</a>
+
+  <script src="usuarios.js"></script>
+  <script>
+    let usuarios = { ...usuariosData.usuarios };
+
+    function renderTable() {
+      const tbody = document.querySelector("#userTable tbody");
+      tbody.innerHTML = "";
+
+      Object.keys(usuarios).forEach(user => {
+        const row = document.createElement("tr");
+
+        row.innerHTML = `
+          <td>${user}</td>
+          <td>${usuarios[user].link}</td>
+          <td>
+            <button onclick="editUser('${user}')">Editar</button>
+            <button class="delete-btn" onclick="deleteUser('${user}')">Excluir</button>
+          </td>
+        `;
+
+        tbody.appendChild(row);
+      });
+    }
+
+    function addOrUpdateUser() {
+      const user = document.getElementById("newUser").value.toLowerCase();
+      const pass = document.getElementById("newPass").value;
+      const link = document.getElementById("newLink").value;
+
+      if (!user || !pass || !link) {
+        alert("Preencha todos os campos!");
+        return;
+      }
+
+      usuarios[user] = { senha: pass, link };
+      saveToLocalStorage();
+      renderTable();
+      clearForm();
+    }
+
+    function editUser(user) {
+      document.getElementById("newUser").value = user;
+      document.getElementById("newPass").value = usuarios[user].senha;
+      document.getElementById("newLink").value = usuarios[user].link;
+    }
+
+    function deleteUser(user) {
+      if (confirm(`Tem certeza que deseja excluir o usuário "${user}"?`)) {
+        delete usuarios[user];
+        saveToLocalStorage();
+        renderTable();
+      }
+    }
+
+    function clearForm() {
+      document.getElementById("newUser").value = "";
+      document.getElementById("newPass").value = "";
+      document.getElementById("newLink").value = "";
+    }
+
+    function saveToLocalStorage() {
+      localStorage.setItem("usuarios", JSON.stringify(usuarios));
+    }
+
+    function loadFromLocalStorage() {
+      const data = localStorage.getItem("usuarios");
+      if (data) {
+        usuarios = JSON.parse(data);
+      }
+    }
+
+    loadFromLocalStorage();
+    renderTable();
+  </script>
+</body>
+</html>

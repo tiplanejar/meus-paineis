@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Meus Painéis</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+.fade-in {
+  animation: fadeIn 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+    h2 {
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .painel-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .painel-item {
+      display: block;
+      padding: 12px 24px;
+      background-color: #004080;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      width: 250px;
+      text-align: center;
+      font-weight: bold;
+	  transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+	.painel-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+    .botao-sair {
+      margin-top: 30px;
+      background-color: #a00;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100px;
+	  transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+	.botao-sair:hover {
+  transform: scale(1.05);
+  background-color: #c00;
+}
+  </style>
+</head>
+<body>
+  <h2>Meus Painéis Disponíveis</h2>
+  <div id="painelLista" class="painel-container"></div>
+
+  <script>
+    let raw = localStorage.getItem("linksPermitidos");
+    let links = [];
+
+    try {
+      links = JSON.parse(raw);
+      if (typeof links === "string") {
+        links = [links];
+      }
+    } catch (e) {
+      links = [];
+    }
+
+    const painelLista = document.getElementById("painelLista");
+
+    if (!Array.isArray(links) || links.length === 0) {
+      painelLista.innerHTML = "<p>Nenhum painel disponível para este usuário.</p>";
+    } else {
+      links.forEach(link => {
+        let url = "";
+        let nome = "Acessar Painel";
+
+        if (typeof link === "string") {
+          url = link;
+        } else if (typeof link === "object" && link.url) {
+          url = link.url;
+          nome = link.nome || nome;
+        }
+
+        const painelItem = document.createElement("a");
+        painelItem.href = url;
+        painelItem.textContent = nome;
+        painelItem.className = "painel-item fade-in";
+        painelItem.target = "_blank";
+        painelLista.appendChild(painelItem);
+      });
+    }
+
+    // Botão Sair
+    const sairBtn = document.createElement("button");
+    sairBtn.className = "botao-sair";
+    sairBtn.textContent = "Sair";
+    sairBtn.addEventListener("click", () => {
+      localStorage.clear();
+      window.location.href = "TELALOGIN.html";
+    });
+
+    painelLista.appendChild(sairBtn);
+  </script>
+</body>
+</html>

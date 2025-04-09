@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Selecionar Painel</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #dbdfe7;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .painel-lista {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      max-width: 400px;
+    }
+    .botao-sair {
+  margin-top: 10px;
+  padding: 10px 18px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.botao-sair:hover {
+  background-color: #e60000;
+}
+    .painel-item {
+      background-color: #004080;
+      color: white;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .painel-item:hover {
+      background-color: #003060;
+    }
+  </style>
+</head>
+<body>
+  <h2>Selecione o Painel que deseja acessar</h2>
+  <div class="painel-lista" id="painelLista"></div>
+  
+
+
+  <script>
+<script>
+  if (!localStorage.getItem("linksPermitidos")) {
+    window.location.href = "TELALOGIN.html";
+  }
+
+  const links = JSON.parse(localStorage.getItem("linksPermitidos")) || [];
+  const painelLista = document.getElementById("painelLista");
+
+  if (links.length === 0) {
+    painelLista.innerHTML = "<p>Nenhum painel disponível para este usuário.</p>";
+  } else {
+    links.forEach(link => {
+      const painelNome = link.nome || "Acessar Painel";
+      const painelItem = document.createElement("a");
+      painelItem.href = link.url || link; // compatível com string simples ou objeto
+      painelItem.textContent = painelNome;
+      painelItem.className = "painel-item";
+      painelItem.target = "_blank";
+      painelLista.appendChild(painelItem);
+    });
+  }
+
+  // ⬇️ Cria o botão Sair DEPOIS da lista
+  const sairBtn = document.createElement("button");
+  sairBtn.id = "btnSair";
+  sairBtn.className = "botao-sair";
+  sairBtn.textContent = "Sair";
+  sairBtn.addEventListener("click", function () {
+    localStorage.clear();
+    window.location.href = "TELALOGIN.html";
+  });
+  painelLista.appendChild(sairBtn); // adiciona ao final da lista
+</script>
+
+</body>
+</html>

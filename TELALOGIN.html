@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Painéis Power BI</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #dbdfe7;
+      margin: 0;
+      padding: 0;
+    }
+
+    .login-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .logo-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .logo-img {
+      max-width: 250px;
+      height: auto;
+    }
+
+    .login-container {
+      background-color: #b6bece;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      text-align: center;
+    }
+
+    .login-container h2 {
+      margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    button {
+      background-color: #004080;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #003060;
+    }
+
+    h2 {
+      color: #4d525b;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-wrapper">
+    <div class="logo-container">
+      <img src="logoplanejar.png" alt="Logo Planejar" class="logo-img">
+    </div>
+
+    <div class="login-container">
+      <h2>Acesso aos Painéis</h2>
+      <input type="text" id="usuario" placeholder="Usuário">
+      <input type="password" id="senha" placeholder="Senha">
+      <button onclick="fazerLogin()">Entrar</button>
+    </div>
+  </div>
+
+  <script src="usuarios.js"></script>
+ <script src="usuarios.js"></script>
+  <script src="login.js"></script> 
+  
+</body>
+</html>
