@@ -86,5 +86,13 @@
 
   <script src="usuarios.js"></script>
   <script src="login.js"></script> 
+
+  <!-- Script para forçar recarregamento apenas uma vez -->
+  <script>
+    if (!sessionStorage.getItem("refreshedOnce")) {
+      sessionStorage.setItem("refreshedOnce", "true");
+      window.location.href = window.location.href.split('?')[0] + '?updated=' + new Date().getTime();
+    }
+  </script>
 </body>
 </html>
