@@ -6,9 +6,9 @@ window.usuarios = [
       { nome: "COMERCIAL", url: "https://app.powerbi.com/view?r=eyJrIjoiNjU0ODJlMjItNDhkNy00Njk3LWE0NTEtNWU4ZDJiYzhiNTViIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
       { nome: "PLAN TOWER COLINA", url: "https://app.powerbi.com/view?r=eyJrIjoiNDgyMDcwODAtNmE4Ni00YzFkLThiOGMtMTQ3Yjc5OWM0MzFlIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
       { nome: "LANÇAMENTO", url: "https://app.powerbi.com/view?r=eyJrIjoiMzU1NGIwYjAtZDI1ZS00MDJlLWJlMjMtNDViZTNiYWM2YTM2IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
-      { NOME: "FINANCEIRO", url: "https://app.powerbi.com/view?r=eyJrIjoiNWExODJjMzMtY2U4Ny00N2M0LTg0ODAtMWY2ZDhkMjNlNTEzIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
-      { NOME: "FOLHA", url: "https://app.powerbi.com/view?r=eyJrIjoiNWVkMTdkZTgtOTMxNy00ZWJlLWE1ZjItODIyZTE1NjhkZmIxIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
-      { NOME: "SUPRIMENTOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMzZkNGZiNGItNzQ5Yi00OWQ5LWEwMGMtZDEwYzYyYjkzZWM5IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"}
+      { nome: "FINANCEIRO", url: "https://app.powerbi.com/view?r=eyJrIjoiNWExODJjMzMtY2U4Ny00N2M0LTg0ODAtMWY2ZDhkMjNlNTEzIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
+      { nome: "FOLHA", url: "https://app.powerbi.com/view?r=eyJrIjoiNWVkMTdkZTgtOTMxNy00ZWJlLWE1ZjItODIyZTE1NjhkZmIxIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
+      { nome: "SUPRIMENTOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMzZkNGZiNGItNzQ5Yi00OWQ5LWEwMGMtZDEwYzYyYjkzZWM5IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"}
       ]
   },
   {
@@ -18,9 +18,9 @@ window.usuarios = [
      { nome: "COMERCIAL", url: "https://app.powerbi.com/view?r=eyJrIjoiNjU0ODJlMjItNDhkNy00Njk3LWE0NTEtNWU4ZDJiYzhiNTViIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
       { nome: "PLAN TOWER COLINA", url: "https://app.powerbi.com/view?r=eyJrIjoiNDgyMDcwODAtNmE4Ni00YzFkLThiOGMtMTQ3Yjc5OWM0MzFlIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
       { nome: "LANÇAMENTO", url: "https://app.powerbi.com/view?r=eyJrIjoiMzU1NGIwYjAtZDI1ZS00MDJlLWJlMjMtNDViZTNiYWM2YTM2IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
-      { NOME: "FINANCEIRO", url: "https://app.powerbi.com/view?r=eyJrIjoiNWExODJjMzMtY2U4Ny00N2M0LTg0ODAtMWY2ZDhkMjNlNTEzIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
-      { NOME: "FOLHA", url: "https://app.powerbi.com/view?r=eyJrIjoiNWVkMTdkZTgtOTMxNy00ZWJlLWE1ZjItODIyZTE1NjhkZmIxIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
-      { NOME: "SUPRIMENTOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMzZkNGZiNGItNzQ5Yi00OWQ5LWEwMGMtZDEwYzYyYjkzZWM5IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"}
+      { nome: "FINANCEIRO", url: "https://app.powerbi.com/view?r=eyJrIjoiNWExODJjMzMtY2U4Ny00N2M0LTg0ODAtMWY2ZDhkMjNlNTEzIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
+      { nome: "FOLHA", url: "https://app.powerbi.com/view?r=eyJrIjoiNWVkMTdkZTgtOTMxNy00ZWJlLWE1ZjItODIyZTE1NjhkZmIxIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
+      { nome: "SUPRIMENTOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMzZkNGZiNGItNzQ5Yi00OWQ5LWEwMGMtZDEwYzYyYjkzZWM5IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"}
     ]
   },
   {
@@ -30,9 +30,9 @@ window.usuarios = [
       { nome: "COMERCIAL", url: "https://app.powerbi.com/view?r=eyJrIjoiNjU0ODJlMjItNDhkNy00Njk3LWE0NTEtNWU4ZDJiYzhiNTViIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
       { nome: "PLAN TOWER COLINA", url: "https://app.powerbi.com/view?r=eyJrIjoiNDgyMDcwODAtNmE4Ni00YzFkLThiOGMtMTQ3Yjc5OWM0MzFlIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
       { nome: "LANÇAMENTO", url: "https://app.powerbi.com/view?r=eyJrIjoiMzU1NGIwYjAtZDI1ZS00MDJlLWJlMjMtNDViZTNiYWM2YTM2IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
-      { NOME: "FINANCEIRO", url: "https://app.powerbi.com/view?r=eyJrIjoiNWExODJjMzMtY2U4Ny00N2M0LTg0ODAtMWY2ZDhkMjNlNTEzIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
-      { NOME: "FOLHA", url: "https://app.powerbi.com/view?r=eyJrIjoiNWVkMTdkZTgtOTMxNy00ZWJlLWE1ZjItODIyZTE1NjhkZmIxIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
-      { NOME: "SUPRIMENTOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMzZkNGZiNGItNzQ5Yi00OWQ5LWEwMGMtZDEwYzYyYjkzZWM5IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"}
+      { nome: "FINANCEIRO", url: "https://app.powerbi.com/view?r=eyJrIjoiNWExODJjMzMtY2U4Ny00N2M0LTg0ODAtMWY2ZDhkMjNlNTEzIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
+      { nome: "FOLHA", url: "https://app.powerbi.com/view?r=eyJrIjoiNWVkMTdkZTgtOTMxNy00ZWJlLWE1ZjItODIyZTE1NjhkZmIxIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
+      { nome: "SUPRIMENTOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMzZkNGZiNGItNzQ5Yi00OWQ5LWEwMGMtZDEwYzYyYjkzZWM5IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"}
     ]
   },
   {
@@ -42,9 +42,9 @@ window.usuarios = [
      { nome: "COMERCIAL", url: "https://app.powerbi.com/view?r=eyJrIjoiNjU0ODJlMjItNDhkNy00Njk3LWE0NTEtNWU4ZDJiYzhiNTViIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
       { nome: "PLAN TOWER COLINA", url: "https://app.powerbi.com/view?r=eyJrIjoiNDgyMDcwODAtNmE4Ni00YzFkLThiOGMtMTQ3Yjc5OWM0MzFlIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
       { nome: "LANÇAMENTO", url: "https://app.powerbi.com/view?r=eyJrIjoiMzU1NGIwYjAtZDI1ZS00MDJlLWJlMjMtNDViZTNiYWM2YTM2IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
-      { NOME: "FINANCEIRO", url: "https://app.powerbi.com/view?r=eyJrIjoiNWExODJjMzMtY2U4Ny00N2M0LTg0ODAtMWY2ZDhkMjNlNTEzIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
-      { NOME: "FOLHA", url: "https://app.powerbi.com/view?r=eyJrIjoiNWVkMTdkZTgtOTMxNy00ZWJlLWE1ZjItODIyZTE1NjhkZmIxIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
-      { NOME: "SUPRIMENTOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMzZkNGZiNGItNzQ5Yi00OWQ5LWEwMGMtZDEwYzYyYjkzZWM5IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"}
+      { nome: "FINANCEIRO", url: "https://app.powerbi.com/view?r=eyJrIjoiNWExODJjMzMtY2U4Ny00N2M0LTg0ODAtMWY2ZDhkMjNlNTEzIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
+      { nome: "FOLHA", url: "https://app.powerbi.com/view?r=eyJrIjoiNWVkMTdkZTgtOTMxNy00ZWJlLWE1ZjItODIyZTE1NjhkZmIxIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
+      { nome: "SUPRIMENTOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMzZkNGZiNGItNzQ5Yi00OWQ5LWEwMGMtZDEwYzYyYjkzZWM5IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"}
     ]
   },
   {
@@ -91,8 +91,8 @@ window.usuarios = [
     paineis: [
       { nome: "COMERCIAL", url: "https://app.powerbi.com/view?r=eyJrIjoiNjU0ODJlMjItNDhkNy00Njk3LWE0NTEtNWU4ZDJiYzhiNTViIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
       { nome: "LANÇAMENTO", url: "https://app.powerbi.com/view?r=eyJrIjoiMzU1NGIwYjAtZDI1ZS00MDJlLWJlMjMtNDViZTNiYWM2YTM2IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
-      { NOME: "FINANCEIRO", url: "https://app.powerbi.com/view?r=eyJrIjoiNWExODJjMzMtY2U4Ny00N2M0LTg0ODAtMWY2ZDhkMjNlNTEzIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
-      { NOME: "SUPRIMENTOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMzZkNGZiNGItNzQ5Yi00OWQ5LWEwMGMtZDEwYzYyYjkzZWM5IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"}
+      { nome: "FINANCEIRO", url: "https://app.powerbi.com/view?r=eyJrIjoiNWExODJjMzMtY2U4Ny00N2M0LTg0ODAtMWY2ZDhkMjNlNTEzIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
+      { nome: "SUPRIMENTOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMzZkNGZiNGItNzQ5Yi00OWQ5LWEwMGMtZDEwYzYyYjkzZWM5IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"}
     ]
   }
 ];
