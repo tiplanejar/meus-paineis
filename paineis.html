@@ -6,26 +6,18 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
+      background-color: #f9f9f9;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       min-height: 100vh;
       margin: 0;
+      padding: 20px;
     }
-.fade-in {
-  animation: fadeIn 1s ease forwards;
-  opacity: 0;
-}
 
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
     h2 {
-      color: #333;
+      color: #004080;
       margin-bottom: 30px;
     }
 
@@ -43,31 +35,42 @@
       color: white;
       text-decoration: none;
       border-radius: 8px;
-      width: 250px;
+      width: 280px;
       text-align: center;
       font-weight: bold;
-	  transition: transform 0.2s ease, box-shadow 0.2s ease;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      opacity: 0;
+      animation: fadeIn 0.8s ease forwards;
     }
-	.painel-item:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
+
+    .painel-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
 
     .botao-sair {
-      margin-top: 30px;
+      margin-top: 40px;
       background-color: #a00;
       color: white;
       border: none;
       padding: 10px 20px;
       border-radius: 8px;
       cursor: pointer;
-      width: 100px;
-	  transition: transform 0.2s ease, background-color 0.2s ease;
+      width: 120px;
+      transition: transform 0.2s ease, background-color 0.2s ease;
+      font-weight: bold;
     }
-	.botao-sair:hover {
-  transform: scale(1.05);
-  background-color: #c00;
-}
+
+    .botao-sair:hover {
+      transform: scale(1.05);
+      background-color: #c00;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
   </style>
 </head>
 <body>
@@ -75,24 +78,21 @@
   <div id="painelLista" class="painel-container"></div>
 
   <script>
+    const painelLista = document.getElementById("painelLista");
     let raw = localStorage.getItem("linksPermitidos");
     let links = [];
 
     try {
       links = JSON.parse(raw);
-      if (typeof links === "string") {
-        links = [links];
-      }
+      if (typeof links === "string") links = [links];
     } catch (e) {
       links = [];
     }
 
-    const painelLista = document.getElementById("painelLista");
-
     if (!Array.isArray(links) || links.length === 0) {
       painelLista.innerHTML = "<p>Nenhum painel disponível para este usuário.</p>";
     } else {
-      links.forEach(link => {
+      links.forEach((link, index) => {
         let url = "";
         let nome = "Acessar Painel";
 
@@ -106,20 +106,21 @@
         const painelItem = document.createElement("a");
         painelItem.href = url;
         painelItem.textContent = nome;
-        painelItem.className = "painel-item fade-in";
+        painelItem.className = "painel-item";
         painelItem.target = "_blank";
+        painelItem.style.animationDelay = `${index * 0.1}s`;
         painelLista.appendChild(painelItem);
       });
     }
 
-    // Botão Sair
+    // Botão de Sair
     const sairBtn = document.createElement("button");
     sairBtn.className = "botao-sair";
     sairBtn.textContent = "Sair";
-    sairBtn.addEventListener("click", () => {
+    sairBtn.onclick = () => {
       localStorage.clear();
       window.location.href = "index.html";
-    });
+    };
 
     painelLista.appendChild(sairBtn);
   </script>
