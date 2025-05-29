@@ -85,6 +85,20 @@ window.usuarios = [
        { nome: "FOLHA", url: "https://app.powerbi.com/view?r=eyJrIjoiNWVkMTdkZTgtOTMxNy00ZWJlLWE1ZjItODIyZTE1NjhkZmIxIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"  }
          ]
   },
+    {
+    usuario: "filipe.morais",
+    senha: "127723",
+    paineis: [
+      { nome: "SUPRIMENTOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMzZkNGZiNGItNzQ5Yi00OWQ5LWEwMGMtZDEwYzYyYjkzZWM5IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"}
+         ]
+  },
+   {
+    usuario: "joubert.assis",
+    senha: "095488",
+    paineis: [
+      { nome: "SUPRIMENTOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMzZkNGZiNGItNzQ5Yi00OWQ5LWEwMGMtZDEwYzYyYjkzZWM5IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"}
+         ]
+  },
   {
     usuario: "tarcisio.araujo",
     senha: "097629",
