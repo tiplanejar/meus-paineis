@@ -93,6 +93,13 @@ window.usuarios = [
          ]
   },
    {
+    usuario: "itervane.araujo",
+    senha: "072318",
+    paineis: [
+      { nome: "SUPRIMENTOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMzZkNGZiNGItNzQ5Yi00OWQ5LWEwMGMtZDEwYzYyYjkzZWM5IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"}
+         ]
+  },
+   {
     usuario: "joubert.assis",
     senha: "095488",
     paineis: [
