@@ -8,6 +8,7 @@ window.usuarios = [
       { nome: "LANÇAMENTO", url: "https://app.powerbi.com/view?r=eyJrIjoiMzU1NGIwYjAtZDI1ZS00MDJlLWJlMjMtNDViZTNiYWM2YTM2IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
       { nome: "FINANCEIRO", url: "https://app.powerbi.com/view?r=eyJrIjoiNWExODJjMzMtY2U4Ny00N2M0LTg0ODAtMWY2ZDhkMjNlNTEzIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
       { nome: "FOLHA", url: "https://app.powerbi.com/view?r=eyJrIjoiNWVkMTdkZTgtOTMxNy00ZWJlLWE1ZjItODIyZTE1NjhkZmIxIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
+      { nome: "CONTÁBIL", url: "https://app.powerbi.com/view?r=eyJrIjoiMDNhZDc0NWItMzQ2Ny00N2I2LWE0ZGMtY2YyZGUyMTRkNTY4IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
       { nome: "SUPRIMENTOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMzZkNGZiNGItNzQ5Yi00OWQ5LWEwMGMtZDEwYzYyYjkzZWM5IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"}
       ]
   },
@@ -20,6 +21,7 @@ window.usuarios = [
       { nome: "LANÇAMENTO", url: "https://app.powerbi.com/view?r=eyJrIjoiMzU1NGIwYjAtZDI1ZS00MDJlLWJlMjMtNDViZTNiYWM2YTM2IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
       { nome: "FINANCEIRO", url: "https://app.powerbi.com/view?r=eyJrIjoiNWExODJjMzMtY2U4Ny00N2M0LTg0ODAtMWY2ZDhkMjNlNTEzIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
       { nome: "FOLHA", url: "https://app.powerbi.com/view?r=eyJrIjoiNWVkMTdkZTgtOTMxNy00ZWJlLWE1ZjItODIyZTE1NjhkZmIxIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
+      { nome: "CONTÁBIL", url: "https://app.powerbi.com/view?r=eyJrIjoiMDNhZDc0NWItMzQ2Ny00N2I2LWE0ZGMtY2YyZGUyMTRkNTY4IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
       { nome: "SUPRIMENTOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMzZkNGZiNGItNzQ5Yi00OWQ5LWEwMGMtZDEwYzYyYjkzZWM5IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"}
     ]
   },
@@ -32,6 +34,7 @@ window.usuarios = [
       { nome: "LANÇAMENTO", url: "https://app.powerbi.com/view?r=eyJrIjoiMzU1NGIwYjAtZDI1ZS00MDJlLWJlMjMtNDViZTNiYWM2YTM2IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
       { nome: "FINANCEIRO", url: "https://app.powerbi.com/view?r=eyJrIjoiNWExODJjMzMtY2U4Ny00N2M0LTg0ODAtMWY2ZDhkMjNlNTEzIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
       { nome: "FOLHA", url: "https://app.powerbi.com/view?r=eyJrIjoiNWVkMTdkZTgtOTMxNy00ZWJlLWE1ZjItODIyZTE1NjhkZmIxIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
+      { nome: "CONTÁBIL", url: "https://app.powerbi.com/view?r=eyJrIjoiMDNhZDc0NWItMzQ2Ny00N2I2LWE0ZGMtY2YyZGUyMTRkNTY4IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
       { nome: "SUPRIMENTOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMzZkNGZiNGItNzQ5Yi00OWQ5LWEwMGMtZDEwYzYyYjkzZWM5IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"}
     ]
   },
@@ -44,6 +47,7 @@ window.usuarios = [
       { nome: "LANÇAMENTO", url: "https://app.powerbi.com/view?r=eyJrIjoiMzU1NGIwYjAtZDI1ZS00MDJlLWJlMjMtNDViZTNiYWM2YTM2IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
       { nome: "FINANCEIRO", url: "https://app.powerbi.com/view?r=eyJrIjoiNWExODJjMzMtY2U4Ny00N2M0LTg0ODAtMWY2ZDhkMjNlNTEzIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
       { nome: "FOLHA", url: "https://app.powerbi.com/view?r=eyJrIjoiNWVkMTdkZTgtOTMxNy00ZWJlLWE1ZjItODIyZTE1NjhkZmIxIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
+      { nome: "CONTÁBIL", url: "https://app.powerbi.com/view?r=eyJrIjoiMDNhZDc0NWItMzQ2Ny00N2I2LWE0ZGMtY2YyZGUyMTRkNTY4IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
       { nome: "SUPRIMENTOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMzZkNGZiNGItNzQ5Yi00OWQ5LWEwMGMtZDEwYzYyYjkzZWM5IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"}
     ]
   },
@@ -104,6 +108,13 @@ window.usuarios = [
     senha: "095488",
     paineis: [
       { nome: "SUPRIMENTOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMzZkNGZiNGItNzQ5Yi00OWQ5LWEwMGMtZDEwYzYyYjkzZWM5IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"}
+         ]
+  },
+  {
+    usuario: "julio.moura",
+    senha: "138589",
+    paineis: [
+       { nome: "CONTÁBIL", url: "https://app.powerbi.com/view?r=eyJrIjoiMDNhZDc0NWItMzQ2Ny00N2I2LWE0ZGMtY2YyZGUyMTRkNTY4IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"}
          ]
   },
   {
