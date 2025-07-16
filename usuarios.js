@@ -82,6 +82,13 @@ window.usuarios = [
        { nome: "PROJETOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMjlkMmQ5YTItZjRhYy00MTAyLWIyZjEtNjgyMGEwZmRiZWFmIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"  }
          ]
   },
+   {
+    usuario: "projetos.planejar",
+    senha: "202507",
+    paineis: [
+       { nome: "PROJETOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMjlkMmQ5YTItZjRhYy00MTAyLWIyZjEtNjgyMGEwZmRiZWFmIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"  }
+         ]
+  },
   {
     usuario: "helenice.carvalho",
     senha: "096970",
