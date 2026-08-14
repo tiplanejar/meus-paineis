@@ -136,8 +136,8 @@ window.usuarios = [
          ]
   },
   {
-    usuario: "tarcisio.silva",
-    senha: "122885",
+    usuario: "tarcisio.araujo",
+    senha: "097629",
     paineis: [
      { nome: "RESULTADO", url: "https://app.powerbi.com/view?r=eyJrIjoiNTA1YWFhOWQtOWEzNi00ZjJiLWE4MTQtNDRhYzY5MzY0Y2U2IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
       { nome: "COMERCIAL", url: "https://app.powerbi.com/view?r=eyJrIjoiNjcwMDcwYzEtYzk2ZS00NjYyLTg4MjctOGFjYmI1ZTU3NzQzIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
