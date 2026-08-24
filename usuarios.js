@@ -82,7 +82,7 @@ window.usuarios = [
     senha: "133467",
     paineis: [
       { nome: "COMERCIAL", url: "https://app.powerbi.com/view?r=eyJrIjoiNjcwMDcwYzEtYzk2ZS00NjYyLTg4MjctOGFjYmI1ZTU3NzQzIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
-      { nome: "LANÇAMENTO", url: "https://app.powerbi.com/view?r=eyJrIjoiMzU1NGIwYjAtZDI1ZS00MDJlLWJlMjMtNDViZTNiYWM2YTM2IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" }
+       { nome: "LANÇAMENTO", url: "https://app.powerbi.com/view?r=eyJrIjoiYTE3ZDY2ZjUtY2I5NS00YmMyLThkOTktMWJhNzE1ZGIzM2Y3IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"}
     ]
   },
   {
