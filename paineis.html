@@ -2,127 +2,126 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Meus Painéis</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      margin: 0;
-      padding: 20px;
-    }
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meus painéis — Planejar</title>
 
-    h2 {
-      color: #004080;
-      margin-bottom: 30px;
-    }
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-    .painel-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 15px;
-    }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    .painel-item {
-      display: block;
-      padding: 12px 24px;
-      background-color: #004080;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      width: 280px;
-      text-align: center;
-      font-weight: bold;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-      opacity: 0;
-      animation: fadeIn 0.8s ease forwards;
-    }
-
-    .painel-item:hover {
-      transform: scale(1.05);
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    .botao-sair {
-      margin-top: 40px;
-      background-color: #a00;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 8px;
-      cursor: pointer;
-      width: 120px;
-      transition: transform 0.2s ease, background-color 0.2s ease;
-      font-weight: bold;
-    }
-
-    .botao-sair:hover {
-      transform: scale(1.05);
-      background-color: #c00;
-    }
-
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="estilo.css?v=2">
 </head>
 <body>
-  <h2>Meus Painéis Disponíveis</h2>
-  <div id="painelLista" class="painel-container"></div>
 
+  <div class="app">
+
+    <header class="topo">
+      <div class="topo-int">
+        <img src="logoplanejar.png" alt="Planejar Engenharia">
+        <span class="espaco"></span>
+
+        <div class="quem">
+          <div class="avatar" id="avatar">--</div>
+          <div class="quem-txt">
+            <b id="nomeUsuario">—</b>
+            <span id="contagem"></span>
+          </div>
+        </div>
+
+        <button class="btn-sair" id="btnSair" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5M21 12H9"/>
+          </svg>
+          Sair
+        </button>
+      </div>
+    </header>
+
+    <main class="conteudo">
+      <h1 class="titulo">Meus painéis</h1>
+      <p class="legenda">Selecione um relatório para abrir em uma nova aba.</p>
+      <div class="grade" id="painelLista"></div>
+    </main>
+
+    <footer class="rodape">Planejar Engenharia · Painéis de BI</footer>
+
+  </div>
+
+  <script src="painel.js?v=2"></script>
   <script>
-    const painelLista = document.getElementById("painelLista");
-    let raw = localStorage.getItem("linksPermitidos");
-    let links = [];
+  (function () {
+    "use strict";
 
+    var lista = document.getElementById("painelLista");
+
+    // ---- sessão -----------------------------------------------------------
+    var bruto = localStorage.getItem("linksPermitidos");
+    if (bruto === null) {
+      window.location.replace("index.html");
+      return;
+    }
+
+    var links = [];
     try {
-      links = JSON.parse(raw);
+      links = JSON.parse(bruto);
       if (typeof links === "string") links = [links];
     } catch (e) {
       links = [];
     }
+    if (!Array.isArray(links)) links = [];
 
-    if (!Array.isArray(links) || links.length === 0) {
-      painelLista.innerHTML = "<p>Nenhum painel disponível para este usuário.</p>";
-    } else {
-      links.forEach((link, index) => {
-        let url = "";
-        let nome = "Acessar Painel";
+    // ---- identificação do usuário ----------------------------------------
+    var usuario = localStorage.getItem("usuarioLogado") || "";
+    document.getElementById("nomeUsuario").textContent = usuario || "Usuário";
+    document.getElementById("avatar").textContent =
+      usuario
+        ? usuario.split(/[.\s_-]+/).filter(Boolean).slice(0, 2)
+                 .map(function (p) { return p.charAt(0).toUpperCase(); }).join("")
+        : "??";
+    document.getElementById("contagem").textContent =
+      links.length === 1 ? "1 painel liberado" : links.length + " painéis liberados";
 
-        if (typeof link === "string") {
-          url = link;
-        } else if (typeof link === "object" && link.url) {
-          url = link.url;
-          nome = link.nome || nome;
-        }
+    // ---- cards ------------------------------------------------------------
+    function svgIcone(chave) {
+      var d = (window.PAINEL_ICONES || {})[chave] || "";
+      return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" '
+           + 'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + d + '</svg>';
+    }
 
-        const painelItem = document.createElement("a");
-        painelItem.href = url;
-        painelItem.textContent = nome;
-        painelItem.className = "painel-item";
-        painelItem.target = "_blank";
-        painelItem.style.animationDelay = `${index * 0.1}s`;
-        painelLista.appendChild(painelItem);
+    function escapar(txt) {
+      return String(txt).replace(/[&<>"']/g, function (c) {
+        return { "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" }[c];
       });
     }
 
-    // Botão de Sair
-    const sairBtn = document.createElement("button");
-    sairBtn.className = "botao-sair";
-    sairBtn.textContent = "Sair";
-    sairBtn.onclick = () => {
-      localStorage.clear();
-      window.location.href = "index.html";
-    };
+    if (links.length === 0) {
+      lista.innerHTML = '<div class="vazio">Nenhum painel liberado para este usuário.<br>'
+                      + 'Fale com a equipe de TI se precisar de acesso.</div>';
+    } else {
+      lista.innerHTML = links.map(function (link, i) {
+        var url  = typeof link === "string" ? link : (link && link.url) || "";
+        var nome = (link && link.nome) || "Acessar painel";
+        var meta = window.metaDoPainel ? window.metaDoPainel(nome) : { area:"Relatório", icone:"grafico", cor:"#004080", corLuz:"#e8f0fa" };
 
-    painelLista.appendChild(sairBtn);
+        return '<a class="painel" href="' + escapar(url) + '" target="_blank" rel="noopener noreferrer"'
+             + ' style="--cor:' + meta.cor + ';--cor-luz:' + meta.corLuz + ';animation-delay:' + (i * 45) + 'ms">'
+             + '<span class="icone">' + svgIcone(meta.icone) + '</span>'
+             + '<span class="painel-txt"><b>' + escapar(nome) + '</b><span>' + escapar(meta.area) + '</span></span>'
+             + '<svg class="seta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" '
+             + 'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>'
+             + '</a>';
+      }).join("");
+    }
+
+    // ---- sair -------------------------------------------------------------
+    document.getElementById("btnSair").addEventListener("click", function () {
+      localStorage.removeItem("linksPermitidos");
+      localStorage.removeItem("usuarioLogado");
+      window.location.replace("index.html");
+    });
+  })();
   </script>
 </body>
 </html>

@@ -1,171 +1,422 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Administração de Usuários</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gerenciar usuários — Planejar</title>
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="estilo.css?v=2">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f0f2f5;
-      padding: 30px;
+    .adm{max-width:1080px;margin:0 auto;padding:32px 24px 64px}
+    .adm h1{margin:0 0 4px;font-size:25px;font-weight:600;letter-spacing:-.02em}
+    .adm .legenda{margin:0 0 26px;font-size:14px;color:var(--tinta-2)}
+
+    .nota{
+      display:flex;gap:11px;align-items:flex-start;
+      padding:14px 16px;margin-bottom:26px;
+      background:#fffbeb;border:1px solid #fde68a;border-radius:var(--r-sm);
+      font-size:13px;color:#78350f;line-height:1.55;
+    }
+    .nota svg{width:17px;height:17px;flex-shrink:0;margin-top:1px}
+    .nota b{font-weight:600}
+
+    .bloco{
+      background:var(--papel);border:1px solid var(--borda);
+      border-radius:var(--r);box-shadow:var(--sombra-sm);
+      padding:22px;margin-bottom:20px;
+    }
+    .bloco h2{margin:0 0 16px;font-size:16px;font-weight:600}
+
+    .tabela-rolo{overflow-x:auto;margin:-4px}
+    table{width:100%;border-collapse:collapse;font-size:13.5px;min-width:600px}
+    th{
+      text-align:left;font-size:11px;font-weight:600;letter-spacing:.06em;
+      text-transform:uppercase;color:var(--tinta-3);
+      padding:0 12px 9px;border-bottom:1.5px solid var(--borda);
+    }
+    td{padding:11px 12px;border-bottom:1px solid #eef1f6;vertical-align:middle}
+    tbody tr:last-child td{border-bottom:none}
+    tbody tr:hover{background:#fafbfd}
+    td.user{font-weight:600}
+    td.senha{font-variant-numeric:tabular-nums;color:var(--tinta-2)}
+
+    .chips{display:flex;flex-wrap:wrap;gap:5px}
+    .chip{
+      font-size:11px;font-weight:600;padding:3px 8px;border-radius:20px;
+      background:var(--azul-luz);color:var(--azul);white-space:nowrap;
+    }
+    .acoes{display:flex;gap:6px;justify-content:flex-end}
+
+    .btn{
+      font:inherit;font-size:12.5px;font-weight:500;
+      padding:6px 12px;border-radius:8px;cursor:pointer;
+      border:1.5px solid var(--borda);background:#fff;color:var(--tinta-2);
+      transition:all .15s;white-space:nowrap;
+    }
+    .btn:hover{border-color:var(--borda-forte);background:#f7f9fc}
+    .btn:focus-visible{outline:3px solid rgba(26,111,196,.4);outline-offset:2px}
+    .btn-perigo:hover{color:#b91c1c;border-color:#fca5a5;background:#fff6f6}
+    .btn-azul{
+      background:linear-gradient(180deg,#1a5fa8,var(--azul));
+      color:#fff;border-color:transparent;font-weight:600;
+      box-shadow:0 2px 6px rgba(0,64,128,.2);
+    }
+    .btn-azul:hover{filter:brightness(1.07);background:linear-gradient(180deg,#1a5fa8,var(--azul))}
+    .btn-g{font-size:14px;padding:11px 20px}
+
+    .linha-form{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:16px}
+    .linha-form label{
+      display:block;font-size:12.5px;font-weight:600;
+      color:var(--tinta-2);margin-bottom:6px;
+    }
+    .linha-form input{
+      font:inherit;font-size:14px;width:100%;padding:10px 12px;
+      background:#fbfcfe;border:1.5px solid var(--borda);border-radius:10px;color:var(--tinta);
+    }
+    .linha-form input:focus{
+      outline:none;background:#fff;border-color:var(--azul-clr);
+      box-shadow:0 0 0 3.5px rgba(26,111,196,.15);
     }
 
-    h1 {
-      text-align: center;
-      margin-bottom: 20px;
+    .rot{font-size:12.5px;font-weight:600;color:var(--tinta-2);margin-bottom:9px}
+    .caixas{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:8px}
+    .cx{
+      display:flex;align-items:center;gap:9px;
+      padding:9px 11px;border:1.5px solid var(--borda);border-radius:10px;
+      font-size:13px;cursor:pointer;transition:all .15s;background:#fff;
     }
+    .cx:hover{border-color:var(--borda-forte);background:#fafbfd}
+    .cx input{accent-color:var(--azul);width:15px;height:15px;cursor:pointer;flex-shrink:0}
+    .cx.marcada{border-color:var(--azul-clr);background:var(--azul-luz)}
+    .cx .pt{width:8px;height:8px;border-radius:50%;flex-shrink:0}
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 30px;
+    .rodape-form{display:flex;gap:10px;align-items:center;margin-top:20px;flex-wrap:wrap}
+    .msg{font-size:13px;font-weight:500}
+    .msg.ok{color:var(--ok)}
+    .msg.erro{color:var(--erro)}
+
+    textarea{
+      font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+      font-size:12px;line-height:1.55;
+      width:100%;min-height:300px;padding:14px;
+      border:1.5px solid var(--borda);border-radius:10px;
+      background:#fbfcfe;color:var(--tinta);resize:vertical;white-space:pre;
     }
-
-    th, td {
-      border: 1px solid #ccc;
-      padding: 10px;
-      text-align: left;
+    .voltar{
+      display:inline-flex;align-items:center;gap:7px;
+      font-size:13.5px;color:var(--azul-clr);text-decoration:none;margin-top:8px;
     }
+    .voltar:hover{text-decoration:underline}
 
-    th {
-      background-color: #007bff;
-      color: white;
-    }
-
-    tr:nth-child(even) {
-      background-color: #f9f9f9;
-    }
-
-    input, button {
-      padding: 8px;
-      margin: 5px 0;
-      width: 100%;
-      box-sizing: border-box;
-    }
-
-    button {
-      cursor: pointer;
-      background-color: #28a745;
-      color: white;
-      border: none;
-      border-radius: 5px;
-    }
-
-    .delete-btn {
-      background-color: #dc3545;
-    }
-
-    .form-section {
-      max-width: 400px;
-      margin: auto;
-    }
-
-    .back {
-      display: block;
-      text-align: center;
-      margin-top: 20px;
-      text-decoration: none;
-      color: #007bff;
+    @media (max-width:560px){
+      .adm{padding:24px 16px 48px}
+      .linha-form{grid-template-columns:1fr}
     }
   </style>
 </head>
 <body>
-  <h1>Gerenciar Usuários</h1>
 
-  <table id="userTable">
-    <thead>
-      <tr>
-        <th>Usuário</th>
-        <th>Link do Painel</th>
-        <th>Ações</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-  </table>
+<div class="adm">
+  <h1>Gerenciar usuários</h1>
+  <p class="legenda">Monte a lista aqui, gere o arquivo e cole no GitHub.</p>
 
-  <div class="form-section">
-    <h3>Adicionar / Editar Usuário</h3>
-    <input type="text" id="newUser" placeholder="Nome do usuário">
-    <input type="text" id="newPass" placeholder="Senha">
-    <input type="text" id="newLink" placeholder="Link do painel Power BI">
-    <button onclick="addOrUpdateUser()">Salvar</button>
+  <div class="nota">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+      <circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/>
+    </svg>
+    <div>
+      <b>Esta página não salva no GitHub.</b> As alterações valem só nesta aba do navegador.
+      Ao terminar, clique em <b>Gerar arquivo</b>, copie o conteúdo e cole em <code>usuarios.js</code>
+      no GitHub para publicar de verdade.
+    </div>
   </div>
 
-  <a href="login.html" class="back">← Voltar para login</a>
+  <div class="bloco">
+    <h2>Usuários <span id="qtd" style="font-weight:400;color:var(--tinta-3)"></span></h2>
+    <div class="tabela-rolo">
+      <table>
+        <thead>
+          <tr>
+            <th style="width:22%">Usuário</th>
+            <th style="width:12%">Senha</th>
+            <th>Painéis</th>
+            <th style="width:150px"></th>
+          </tr>
+        </thead>
+        <tbody id="corpo"></tbody>
+      </table>
+    </div>
+  </div>
 
-  <script src="usuarios.js"></script>
-  <script>
-    let usuarios = { ...usuariosData.usuarios };
+  <div class="bloco">
+    <h2 id="tituloForm">Adicionar usuário</h2>
 
-    function renderTable() {
-      const tbody = document.querySelector("#userTable tbody");
-      tbody.innerHTML = "";
+    <div class="linha-form">
+      <div>
+        <label for="fUser">Usuário</label>
+        <input type="text" id="fUser" placeholder="nome.sobrenome" autocapitalize="none" spellcheck="false">
+      </div>
+      <div>
+        <label for="fSenha">Senha</label>
+        <input type="text" id="fSenha" placeholder="6 primeiros dígitos do CPF" inputmode="numeric">
+      </div>
+    </div>
 
-      Object.keys(usuarios).forEach(user => {
-        const row = document.createElement("tr");
+    <p class="rot">Painéis liberados</p>
+    <div class="caixas" id="caixas"></div>
 
-        row.innerHTML = `
-          <td>${user}</td>
-          <td>${usuarios[user].link}</td>
-          <td>
-            <button onclick="editUser('${user}')">Editar</button>
-            <button class="delete-btn" onclick="deleteUser('${user}')">Excluir</button>
-          </td>
-        `;
+    <div class="rodape-form">
+      <button class="btn btn-azul btn-g" id="btnSalvar" type="button">Salvar usuário</button>
+      <button class="btn" id="btnLimpar" type="button">Limpar</button>
+      <span class="msg" id="msg"></span>
+    </div>
+  </div>
 
-        tbody.appendChild(row);
-      });
+  <div class="bloco">
+    <h2>Arquivo usuarios.js</h2>
+    <div style="display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap">
+      <button class="btn btn-azul" id="btnGerar" type="button">Gerar arquivo</button>
+      <button class="btn" id="btnCopiar" type="button">Copiar</button>
+      <span class="msg" id="msgGerar"></span>
+    </div>
+    <textarea id="saida" readonly placeholder="Clique em “Gerar arquivo” para montar o conteúdo do usuarios.js…"></textarea>
+  </div>
+
+  <a href="index.html" class="voltar">
+    <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M19 12H5M12 19l-7-7 7-7"/>
+    </svg>
+    Voltar para o login
+  </a>
+</div>
+
+<script src="usuarios.js?v=2"></script>
+<script src="painel.js?v=2"></script>
+<script>
+(function () {
+  "use strict";
+
+  // --- cópia de trabalho da lista (não mexe no arquivo original) ------------
+  var lista = Array.isArray(window.usuarios)
+    ? JSON.parse(JSON.stringify(window.usuarios))
+    : [];
+
+  var editando = null; // nome do usuário sendo editado
+
+  // --- catálogo de painéis: nome -> URL mais usada --------------------------
+  var contagem = {};
+  lista.forEach(function (u) {
+    (u.paineis || []).forEach(function (p) {
+      if (!p || !p.nome || !p.url) return;
+      contagem[p.nome] = contagem[p.nome] || {};
+      contagem[p.nome][p.url] = (contagem[p.nome][p.url] || 0) + 1;
+    });
+  });
+
+  var catalogo = {};   // nome -> url
+  var conflitos = [];  // nomes com mais de uma URL
+  Object.keys(contagem).forEach(function (nome) {
+    var urls = Object.keys(contagem[nome]);
+    if (urls.length > 1) conflitos.push(nome);
+    urls.sort(function (a, b) { return contagem[nome][b] - contagem[nome][a]; });
+    catalogo[nome] = urls[0];
+  });
+
+  var nomes = Object.keys(catalogo).sort();
+
+  if (conflitos.length) {
+    var d = document.createElement("div");
+    d.className = "nota";
+    d.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">'
+                + '<path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>'
+                + '<path d="M12 9v4M12 17h.01"/></svg>'
+                + '<div><b>Atenção:</b> o painel <b>' + conflitos.join("</b>, <b>") + '</b> aparece com URLs '
+                + 'diferentes entre usuários. Ao marcar a caixa aqui, será usada a URL mais frequente. '
+                + 'Confira se isso está correto.</div>';
+    document.querySelector(".adm .nota").after(d);
+  }
+
+  // --- tabela ---------------------------------------------------------------
+  function esc(t) {
+    return String(t).replace(/[&<>"']/g, function (c) {
+      return { "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" }[c];
+    });
+  }
+
+  function desenharTabela() {
+    var corpo = document.getElementById("corpo");
+    document.getElementById("qtd").textContent = "(" + lista.length + ")";
+
+    if (!lista.length) {
+      corpo.innerHTML = '<tr><td colspan="4" style="text-align:center;color:var(--tinta-3);padding:28px">Nenhum usuário.</td></tr>';
+      return;
     }
 
-    function addOrUpdateUser() {
-      const user = document.getElementById("newUser").value.toLowerCase();
-      const pass = document.getElementById("newPass").value;
-      const link = document.getElementById("newLink").value;
+    corpo.innerHTML = lista.map(function (u, i) {
+      var chips = (u.paineis || []).map(function (p) {
+        return '<span class="chip">' + esc(p.nome || "?") + '</span>';
+      }).join("");
+      return '<tr>'
+           + '<td class="user">' + esc(u.usuario) + '</td>'
+           + '<td class="senha">' + esc(u.senha) + '</td>'
+           + '<td><div class="chips">' + (chips || '<span style="color:var(--tinta-3);font-size:12px">nenhum</span>') + '</div></td>'
+           + '<td><div class="acoes">'
+           + '<button class="btn" data-editar="' + i + '">Editar</button>'
+           + '<button class="btn btn-perigo" data-excluir="' + i + '">Excluir</button>'
+           + '</div></td></tr>';
+    }).join("");
+  }
 
-      if (!user || !pass || !link) {
-        alert("Preencha todos os campos!");
-        return;
-      }
+  document.getElementById("corpo").addEventListener("click", function (e) {
+    var btn = e.target.closest("button");
+    if (!btn) return;
+    if (btn.dataset.editar  !== undefined) carregarNoForm(+btn.dataset.editar);
+    if (btn.dataset.excluir !== undefined) excluir(+btn.dataset.excluir);
+  });
 
-      usuarios[user] = { senha: pass, link };
-      saveToLocalStorage();
-      renderTable();
-      clearForm();
+  // --- caixas de painéis ----------------------------------------------------
+  function desenharCaixas() {
+    document.getElementById("caixas").innerHTML = nomes.map(function (n) {
+      var meta = window.metaDoPainel ? window.metaDoPainel(n) : { cor:"#004080" };
+      return '<label class="cx"><input type="checkbox" value="' + esc(n) + '">'
+           + '<span class="pt" style="background:' + meta.cor + '"></span>'
+           + '<span>' + esc(n) + '</span></label>';
+    }).join("");
+  }
+
+  document.getElementById("caixas").addEventListener("change", function (e) {
+    if (e.target.type === "checkbox") {
+      e.target.closest(".cx").classList.toggle("marcada", e.target.checked);
+    }
+  });
+
+  function marcadas() {
+    return Array.prototype.slice
+      .call(document.querySelectorAll("#caixas input:checked"))
+      .map(function (c) { return c.value; });
+  }
+
+  function marcar(valores) {
+    document.querySelectorAll("#caixas input").forEach(function (c) {
+      c.checked = valores.indexOf(c.value) !== -1;
+      c.closest(".cx").classList.toggle("marcada", c.checked);
+    });
+  }
+
+  // --- formulário -----------------------------------------------------------
+  function aviso(el, texto, tipo) {
+    var m = document.getElementById(el);
+    m.textContent = texto;
+    m.className = "msg " + (tipo || "");
+    if (texto) setTimeout(function () { m.textContent = ""; }, 4000);
+  }
+
+  function limpar() {
+    editando = null;
+    document.getElementById("fUser").value = "";
+    document.getElementById("fSenha").value = "";
+    marcar([]);
+    document.getElementById("tituloForm").textContent = "Adicionar usuário";
+    document.getElementById("btnSalvar").textContent = "Salvar usuário";
+  }
+
+  function carregarNoForm(i) {
+    var u = lista[i];
+    editando = u.usuario;
+    document.getElementById("fUser").value = u.usuario;
+    document.getElementById("fSenha").value = u.senha;
+    marcar((u.paineis || []).map(function (p) { return p.nome; }));
+    document.getElementById("tituloForm").textContent = "Editando: " + u.usuario;
+    document.getElementById("btnSalvar").textContent = "Salvar alterações";
+    document.getElementById("tituloForm").scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+
+  function excluir(i) {
+    var u = lista[i];
+    if (!confirm('Excluir o usuário "' + u.usuario + '"?')) return;
+    lista.splice(i, 1);
+    if (editando === u.usuario) limpar();
+    desenharTabela();
+    aviso("msg", "Usuário removido da lista.", "ok");
+  }
+
+  document.getElementById("btnSalvar").addEventListener("click", function () {
+    var nome  = document.getElementById("fUser").value.trim().toLowerCase();
+    var senha = document.getElementById("fSenha").value.trim();
+    var sel   = marcadas();
+
+    if (!nome)  return aviso("msg", "Informe o usuário.", "erro");
+    if (!senha) return aviso("msg", "Informe a senha.", "erro");
+    if (!sel.length) return aviso("msg", "Marque pelo menos um painel.", "erro");
+
+    var repetido = lista.findIndex(function (u) {
+      return u.usuario.toLowerCase() === nome && u.usuario !== editando;
+    });
+    if (repetido !== -1) return aviso("msg", "Já existe um usuário com esse nome.", "erro");
+
+    var registro = {
+      usuario: nome,
+      senha: senha,
+      paineis: sel.map(function (n) { return { nome: n, url: catalogo[n] }; })
+    };
+
+    if (editando) {
+      var iAtual = lista.findIndex(function (u) { return u.usuario === editando; });
+      lista[iAtual] = registro;
+      aviso("msg", "Alterações salvas na lista.", "ok");
+    } else {
+      lista.push(registro);
+      aviso("msg", "Usuário adicionado à lista.", "ok");
     }
 
-    function editUser(user) {
-      document.getElementById("newUser").value = user;
-      document.getElementById("newPass").value = usuarios[user].senha;
-      document.getElementById("newLink").value = usuarios[user].link;
-    }
+    limpar();
+    desenharTabela();
+  });
 
-    function deleteUser(user) {
-      if (confirm(`Tem certeza que deseja excluir o usuário "${user}"?`)) {
-        delete usuarios[user];
-        saveToLocalStorage();
-        renderTable();
-      }
-    }
+  document.getElementById("btnLimpar").addEventListener("click", limpar);
 
-    function clearForm() {
-      document.getElementById("newUser").value = "";
-      document.getElementById("newPass").value = "";
-      document.getElementById("newLink").value = "";
-    }
+  // --- geração do arquivo ---------------------------------------------------
+  function gerar() {
+    var blocos = lista.map(function (u) {
+      var pns = (u.paineis || []).map(function (p) {
+        return '      { nome: "' + p.nome + '", url: "' + p.url + '" }';
+      }).join(",\n");
+      return '  {\n'
+           + '    usuario: "' + u.usuario + '",\n'
+           + '    senha: "' + u.senha + '",\n'
+           + '    paineis: [\n' + pns + '\n'
+           + '    ]\n'
+           + '  }';
+    }).join(",\n");
 
-    function saveToLocalStorage() {
-      localStorage.setItem("usuarios", JSON.stringify(usuarios));
-    }
+    return "window.usuarios = [\n" + blocos + "\n];\n";
+  }
 
-    function loadFromLocalStorage() {
-      const data = localStorage.getItem("usuarios");
-      if (data) {
-        usuarios = JSON.parse(data);
-      }
-    }
+  document.getElementById("btnGerar").addEventListener("click", function () {
+    document.getElementById("saida").value = gerar();
+    aviso("msgGerar", "Arquivo gerado com " + lista.length + " usuários.", "ok");
+  });
 
-    loadFromLocalStorage();
-    renderTable();
-  </script>
+  document.getElementById("btnCopiar").addEventListener("click", function () {
+    var ta = document.getElementById("saida");
+    if (!ta.value) { ta.value = gerar(); }
+    ta.select();
+    navigator.clipboard.writeText(ta.value).then(
+      function () { aviso("msgGerar", "Copiado! Cole no usuarios.js do GitHub.", "ok"); },
+      function () { document.execCommand("copy"); aviso("msgGerar", "Copiado!", "ok"); }
+    );
+  });
+
+  // --- início ---------------------------------------------------------------
+  desenharCaixas();
+  desenharTabela();
+})();
+</script>
 </body>
 </html>
