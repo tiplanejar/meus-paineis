@@ -150,7 +150,7 @@ window.usuarios = [
      
       { nome: "COMERCIAL", url: "https://app.powerbi.com/view?r=eyJrIjoiNjcwMDcwYzEtYzk2ZS00NjYyLTg4MjctOGFjYmI1ZTU3NzQzIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
       { nome: "PLAN TOWER COLINA", url: "https://app.powerbi.com/view?r=eyJrIjoiNDgyMDcwODAtNmE4Ni00YzFkLThiOGMtMTQ3Yjc5OWM0MzFlIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
-      { nome: "ESTOQUE", url: "https://app.powerbi.com/view?r=eyJrIjoiMjlkMmQ5YTItZjRhYy00MTAyLWIyZjEtNjgyMGEwZmRiZWFmIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"  }
+      { nome: "ESTOQUE", url: "https://app.powerbi.com/view?r=eyJrIjoiMjlkMmQ5YTItZjRhYy00MTAyLWIyZjEtNjgyMGEwZmRiZWFmIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"  },
       { nome: "FINANCEIRO", url: "https://app.powerbi.com/view?r=eyJrIjoiNWExODJjMzMtY2U4Ny00N2M0LTg0ODAtMWY2ZDhkMjNlNTEzIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"}
      
       ]
