@@ -11,7 +11,7 @@ window.usuarios = [
       { nome: "FOLHA", url: "https://app.powerbi.com/view?r=eyJrIjoiNWVkMTdkZTgtOTMxNy00ZWJlLWE1ZjItODIyZTE1NjhkZmIxIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
       { nome: "CONTÁBIL", url: "https://app.powerbi.com/view?r=eyJrIjoiMDNhZDc0NWItMzQ2Ny00N2I2LWE0ZGMtY2YyZGUyMTRkNTY4IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
       { nome: "SUPRIMENTOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMzZkNGZiNGItNzQ5Yi00OWQ5LWEwMGMtZDEwYzYyYjkzZWM5IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
-      { nome: "PROJETOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMjlkMmQ5YTItZjRhYy00MTAyLWIyZjEtNjgyMGEwZmRiZWFmIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"  }
+      { nome: "ESTOQUE", url: "https://app.powerbi.com/view?r=eyJrIjoiMjlkMmQ5YTItZjRhYy00MTAyLWIyZjEtNjgyMGEwZmRiZWFmIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"  }
       ]
   },
   {
@@ -26,7 +26,7 @@ window.usuarios = [
       { nome: "FOLHA", url: "https://app.powerbi.com/view?r=eyJrIjoiNWVkMTdkZTgtOTMxNy00ZWJlLWE1ZjItODIyZTE1NjhkZmIxIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
       { nome: "CONTÁBIL", url: "https://app.powerbi.com/view?r=eyJrIjoiMDNhZDc0NWItMzQ2Ny00N2I2LWE0ZGMtY2YyZGUyMTRkNTY4IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
       { nome: "SUPRIMENTOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMzZkNGZiNGItNzQ5Yi00OWQ5LWEwMGMtZDEwYzYyYjkzZWM5IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
-       { nome: "PROJETOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMjlkMmQ5YTItZjRhYy00MTAyLWIyZjEtNjgyMGEwZmRiZWFmIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"  }
+      { nome: "ESTOQUE", url: "https://app.powerbi.com/view?r=eyJrIjoiMjlkMmQ5YTItZjRhYy00MTAyLWIyZjEtNjgyMGEwZmRiZWFmIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"  }
       ]
   },
   {
@@ -40,7 +40,8 @@ window.usuarios = [
       { nome: "FINANCEIRO", url: "https://app.powerbi.com/view?r=eyJrIjoiNWExODJjMzMtY2U4Ny00N2M0LTg0ODAtMWY2ZDhkMjNlNTEzIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
       { nome: "FOLHA", url: "https://app.powerbi.com/view?r=eyJrIjoiNWVkMTdkZTgtOTMxNy00ZWJlLWE1ZjItODIyZTE1NjhkZmIxIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
       { nome: "CONTÁBIL", url: "https://app.powerbi.com/view?r=eyJrIjoiMDNhZDc0NWItMzQ2Ny00N2I2LWE0ZGMtY2YyZGUyMTRkNTY4IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
-      { nome: "SUPRIMENTOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMzZkNGZiNGItNzQ5Yi00OWQ5LWEwMGMtZDEwYzYyYjkzZWM5IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"}
+      { nome: "SUPRIMENTOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMzZkNGZiNGItNzQ5Yi00OWQ5LWEwMGMtZDEwYzYyYjkzZWM5IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
+       { nome: "ESTOQUE", url: "https://app.powerbi.com/view?r=eyJrIjoiMjlkMmQ5YTItZjRhYy00MTAyLWIyZjEtNjgyMGEwZmRiZWFmIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"  }
     ]
   },
   {
@@ -54,7 +55,8 @@ window.usuarios = [
       { nome: "FINANCEIRO", url: "https://app.powerbi.com/view?r=eyJrIjoiNWExODJjMzMtY2U4Ny00N2M0LTg0ODAtMWY2ZDhkMjNlNTEzIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
       { nome: "FOLHA", url: "https://app.powerbi.com/view?r=eyJrIjoiNWVkMTdkZTgtOTMxNy00ZWJlLWE1ZjItODIyZTE1NjhkZmIxIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
       { nome: "CONTÁBIL", url: "https://app.powerbi.com/view?r=eyJrIjoiMDNhZDc0NWItMzQ2Ny00N2I2LWE0ZGMtY2YyZGUyMTRkNTY4IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
-      { nome: "SUPRIMENTOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMzZkNGZiNGItNzQ5Yi00OWQ5LWEwMGMtZDEwYzYyYjkzZWM5IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"}
+      { nome: "SUPRIMENTOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMzZkNGZiNGItNzQ5Yi00OWQ5LWEwMGMtZDEwYzYyYjkzZWM5IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
+       { nome: "ESTOQUE", url: "https://app.powerbi.com/view?r=eyJrIjoiMjlkMmQ5YTItZjRhYy00MTAyLWIyZjEtNjgyMGEwZmRiZWFmIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"  }
     ]
   },
   {
@@ -68,7 +70,8 @@ window.usuarios = [
       { nome: "FINANCEIRO", url: "https://app.powerbi.com/view?r=eyJrIjoiNWExODJjMzMtY2U4Ny00N2M0LTg0ODAtMWY2ZDhkMjNlNTEzIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
       { nome: "FOLHA", url: "https://app.powerbi.com/view?r=eyJrIjoiNWVkMTdkZTgtOTMxNy00ZWJlLWE1ZjItODIyZTE1NjhkZmIxIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
       { nome: "CONTÁBIL", url: "https://app.powerbi.com/view?r=eyJrIjoiMDNhZDc0NWItMzQ2Ny00N2I2LWE0ZGMtY2YyZGUyMTRkNTY4IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
-      { nome: "SUPRIMENTOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMzZkNGZiNGItNzQ5Yi00OWQ5LWEwMGMtZDEwYzYyYjkzZWM5IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"}
+      { nome: "SUPRIMENTOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMzZkNGZiNGItNzQ5Yi00OWQ5LWEwMGMtZDEwYzYyYjkzZWM5IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
+       { nome: "ESTOQUE", url: "https://app.powerbi.com/view?r=eyJrIjoiMjlkMmQ5YTItZjRhYy00MTAyLWIyZjEtNjgyMGEwZmRiZWFmIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"  }
     ]
   },
   {
@@ -76,7 +79,8 @@ window.usuarios = [
     senha: "157817",
     paineis: [
      { nome: "COMERCIAL", url: "https://app.powerbi.com/view?r=eyJrIjoiNjcwMDcwYzEtYzk2ZS00NjYyLTg4MjctOGFjYmI1ZTU3NzQzIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
-      { nome: "LANÇAMENTO", url: "https://app.powerbi.com/view?r=eyJrIjoiMzU1NGIwYjAtZDI1ZS00MDJlLWJlMjMtNDViZTNiYWM2YTM2IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" }
+      { nome: "LANÇAMENTO", url: "https://app.powerbi.com/view?r=eyJrIjoiMzU1NGIwYjAtZDI1ZS00MDJlLWJlMjMtNDViZTNiYWM2YTM2IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
+       { nome: "ESTOQUE", url: "https://app.powerbi.com/view?r=eyJrIjoiMjlkMmQ5YTItZjRhYy00MTAyLWIyZjEtNjgyMGEwZmRiZWFmIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"  }
     ]
   },
   {
@@ -84,7 +88,8 @@ window.usuarios = [
     senha: "133467",
     paineis: [
       { nome: "COMERCIAL", url: "https://app.powerbi.com/view?r=eyJrIjoiNjcwMDcwYzEtYzk2ZS00NjYyLTg4MjctOGFjYmI1ZTU3NzQzIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
-       { nome: "LANÇAMENTO", url: "https://app.powerbi.com/view?r=eyJrIjoiYTE3ZDY2ZjUtY2I5NS00YmMyLThkOTktMWJhNzE1ZGIzM2Y3IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"}
+       { nome: "LANÇAMENTO", url: "https://app.powerbi.com/view?r=eyJrIjoiYTE3ZDY2ZjUtY2I5NS00YmMyLThkOTktMWJhNzE1ZGIzM2Y3IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
+       { nome: "ESTOQUE", url: "https://app.powerbi.com/view?r=eyJrIjoiMjlkMmQ5YTItZjRhYy00MTAyLWIyZjEtNjgyMGEwZmRiZWFmIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"  }
     ]
   },
   {
@@ -92,21 +97,22 @@ window.usuarios = [
     senha: "084002",
     paineis: [
        { nome: "COMERCIAL", url: "https://app.powerbi.com/view?r=eyJrIjoiNjcwMDcwYzEtYzk2ZS00NjYyLTg4MjctOGFjYmI1ZTU3NzQzIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
-      { nome: "LANÇAMENTO", url: "https://app.powerbi.com/view?r=eyJrIjoiYTE3ZDY2ZjUtY2I5NS00YmMyLThkOTktMWJhNzE1ZGIzM2Y3IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" }
+      { nome: "LANÇAMENTO", url: "https://app.powerbi.com/view?r=eyJrIjoiYTE3ZDY2ZjUtY2I5NS00YmMyLThkOTktMWJhNzE1ZGIzM2Y3IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
+       { nome: "ESTOQUE", url: "https://app.powerbi.com/view?r=eyJrIjoiMjlkMmQ5YTItZjRhYy00MTAyLWIyZjEtNjgyMGEwZmRiZWFmIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"  }
     ]
   },
   {
     usuario: "luanna.drumond",
     senha: "114789",
     paineis: [
-       { nome: "PROJETOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMjlkMmQ5YTItZjRhYy00MTAyLWIyZjEtNjgyMGEwZmRiZWFmIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"  }
+      { nome: "ESTOQUE", url: "https://app.powerbi.com/view?r=eyJrIjoiMjlkMmQ5YTItZjRhYy00MTAyLWIyZjEtNjgyMGEwZmRiZWFmIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"  }
          ]
   },
    {
     usuario: "projetos.planejar",
     senha: "202507",
     paineis: [
-       { nome: "PROJETOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMjlkMmQ5YTItZjRhYy00MTAyLWIyZjEtNjgyMGEwZmRiZWFmIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"  }
+     { nome: "ESTOQUE", url: "https://app.powerbi.com/view?r=eyJrIjoiMjlkMmQ5YTItZjRhYy00MTAyLWIyZjEtNjgyMGEwZmRiZWFmIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"  }
          ]
   },
   {
@@ -144,7 +150,7 @@ window.usuarios = [
      
       { nome: "COMERCIAL", url: "https://app.powerbi.com/view?r=eyJrIjoiNjcwMDcwYzEtYzk2ZS00NjYyLTg4MjctOGFjYmI1ZTU3NzQzIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
       { nome: "PLAN TOWER COLINA", url: "https://app.powerbi.com/view?r=eyJrIjoiNDgyMDcwODAtNmE4Ni00YzFkLThiOGMtMTQ3Yjc5OWM0MzFlIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
-     
+      { nome: "ESTOQUE", url: "https://app.powerbi.com/view?r=eyJrIjoiMjlkMmQ5YTItZjRhYy00MTAyLWIyZjEtNjgyMGEwZmRiZWFmIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"  }
       { nome: "FINANCEIRO", url: "https://app.powerbi.com/view?r=eyJrIjoiNWExODJjMzMtY2U4Ny00N2M0LTg0ODAtMWY2ZDhkMjNlNTEzIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"}
      
       ]
@@ -153,21 +159,24 @@ window.usuarios = [
     usuario: "julio.moura",
     senha: "138589",
     paineis: [
-       { nome: "CONTÁBIL", url: "https://app.powerbi.com/view?r=eyJrIjoiMDNhZDc0NWItMzQ2Ny00N2I2LWE0ZGMtY2YyZGUyMTRkNTY4IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"}
+       { nome: "CONTÁBIL", url: "https://app.powerbi.com/view?r=eyJrIjoiMDNhZDc0NWItMzQ2Ny00N2I2LWE0ZGMtY2YyZGUyMTRkNTY4IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"},
+       { nome: "ESTOQUE", url: "https://app.powerbi.com/view?r=eyJrIjoiMjlkMmQ5YTItZjRhYy00MTAyLWIyZjEtNjgyMGEwZmRiZWFmIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"  }
          ]
   },
   {
     usuario: "suelen.bosco",
     senha: "080082",
     paineis: [
-      { nome: "COMERCIAL", url: "https://app.powerbi.com/view?r=eyJrIjoiNjcwMDcwYzEtYzk2ZS00NjYyLTg4MjctOGFjYmI1ZTU3NzQzIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" }
+      { nome: "COMERCIAL", url: "https://app.powerbi.com/view?r=eyJrIjoiNjcwMDcwYzEtYzk2ZS00NjYyLTg4MjctOGFjYmI1ZTU3NzQzIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
+       { nome: "ESTOQUE", url: "https://app.powerbi.com/view?r=eyJrIjoiMjlkMmQ5YTItZjRhYy00MTAyLWIyZjEtNjgyMGEwZmRiZWFmIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"  }
     ]
   },
   {
     usuario: "julio.mendes",
     senha: "127983",
     paineis: [
-      { nome: "COMERCIAL", url: "https://app.powerbi.com/view?r=eyJrIjoiNjcwMDcwYzEtYzk2ZS00NjYyLTg4MjctOGFjYmI1ZTU3NzQzIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" }
+      { nome: "COMERCIAL", url: "https://app.powerbi.com/view?r=eyJrIjoiNjcwMDcwYzEtYzk2ZS00NjYyLTg4MjctOGFjYmI1ZTU3NzQzIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
+       { nome: "ESTOQUE", url: "https://app.powerbi.com/view?r=eyJrIjoiMjlkMmQ5YTItZjRhYy00MTAyLWIyZjEtNjgyMGEwZmRiZWFmIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9"  }
     ]
   }
 ];
