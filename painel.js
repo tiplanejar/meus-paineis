@@ -16,7 +16,8 @@ window.PAINEL_ICONES = {
   pessoas:     '<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>',
   livro:       '<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>',
   caixa:       '<path d="M16.5 9.4l-9-5.19"/><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12"/>',
-  prancheta:   '<path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>'
+  prancheta:   '<path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>',
+  loja:        '<path d="M3 9l1.5-5.5h15L21 9"/><path d="M3 9a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0"/><path d="M4.5 10.9V20a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1v-9.1"/><path d="M9.5 21v-6h5v6"/>'
 };
 
 window.PAINEL_META = {
@@ -28,7 +29,9 @@ window.PAINEL_META = {
   "FOLHA":             { area:"RH",            icone:"pessoas",     cor:"#9333ea", corLuz:"#f4e9fd" },
   "CONTÁBIL":          { area:"Contabilidade", icone:"livro",       cor:"#475569", corLuz:"#eef1f5" },
   "SUPRIMENTOS":       { area:"Compras",       icone:"caixa",       cor:"#ea580c", corLuz:"#fdeee3" },
-  "PROJETOS":          { area:"Engenharia",    icone:"prancheta",   cor:"#0891b2", corLuz:"#e0f4f9" }
+  "ESTOQUE":           { area:"Almoxarifado",  icone:"prancheta",   cor:"#0891b2", corLuz:"#e0f4f9" },
+
+  "ESCRITÓRIOS DE VENDAS": { area:"Fluxo financeiro", icone:"loja", cor:"#e11d48", corLuz:"#fdeaef" }
 };
 
 /* Padrão para painel que não esteja no mapa acima */
