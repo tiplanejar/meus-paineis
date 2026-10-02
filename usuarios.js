@@ -12,7 +12,7 @@ window.usuarios = [
       { nome: "CONTÁBIL", url: "https://app.powerbi.com/view?r=eyJrIjoiMDNhZDc0NWItMzQ2Ny00N2I2LWE0ZGMtY2YyZGUyMTRkNTY4IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
       { nome: "SUPRIMENTOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMzZkNGZiNGItNzQ5Yi00OWQ5LWEwMGMtZDEwYzYyYjkzZWM5IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
       { nome: "ESTOQUE", url: "https://app.powerbi.com/view?r=eyJrIjoiMjlkMmQ5YTItZjRhYy00MTAyLWIyZjEtNjgyMGEwZmRiZWFmIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
-      { nome: "ESCRITÓRIOS DE VENDAS", url: "https://fluxoescritoriosplanejar.netlify.app/" }
+      { nome: "ESCRITÓRIOS DE VENDAS", url: "https://fluxodiretoria-planejarengenharia.netlify.app/" }
     ]
   },
   {
@@ -28,7 +28,7 @@ window.usuarios = [
       { nome: "CONTÁBIL", url: "https://app.powerbi.com/view?r=eyJrIjoiMDNhZDc0NWItMzQ2Ny00N2I2LWE0ZGMtY2YyZGUyMTRkNTY4IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
       { nome: "SUPRIMENTOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMzZkNGZiNGItNzQ5Yi00OWQ5LWEwMGMtZDEwYzYyYjkzZWM5IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
       { nome: "ESTOQUE", url: "https://app.powerbi.com/view?r=eyJrIjoiMjlkMmQ5YTItZjRhYy00MTAyLWIyZjEtNjgyMGEwZmRiZWFmIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
-      { nome: "ESCRITÓRIOS DE VENDAS", url: "https://fluxoescritoriosplanejar.netlify.app/" }
+      { nome: "ESCRITÓRIOS DE VENDAS", url: "https://fluxodiretoria-planejarengenharia.netlify.app/" }
     ]
   },
   {
@@ -44,7 +44,7 @@ window.usuarios = [
       { nome: "CONTÁBIL", url: "https://app.powerbi.com/view?r=eyJrIjoiMDNhZDc0NWItMzQ2Ny00N2I2LWE0ZGMtY2YyZGUyMTRkNTY4IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
       { nome: "SUPRIMENTOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMzZkNGZiNGItNzQ5Yi00OWQ5LWEwMGMtZDEwYzYyYjkzZWM5IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
       { nome: "ESTOQUE", url: "https://app.powerbi.com/view?r=eyJrIjoiMjlkMmQ5YTItZjRhYy00MTAyLWIyZjEtNjgyMGEwZmRiZWFmIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
-      { nome: "ESCRITÓRIOS DE VENDAS", url: "https://fluxoescritoriosplanejar.netlify.app/" }
+      { nome: "ESCRITÓRIOS DE VENDAS", url: "https://fluxodiretoria-planejarengenharia.netlify.app/" }
     ]
   },
   {
@@ -60,7 +60,7 @@ window.usuarios = [
       { nome: "CONTÁBIL", url: "https://app.powerbi.com/view?r=eyJrIjoiMDNhZDc0NWItMzQ2Ny00N2I2LWE0ZGMtY2YyZGUyMTRkNTY4IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
       { nome: "SUPRIMENTOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMzZkNGZiNGItNzQ5Yi00OWQ5LWEwMGMtZDEwYzYyYjkzZWM5IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
       { nome: "ESTOQUE", url: "https://app.powerbi.com/view?r=eyJrIjoiMjlkMmQ5YTItZjRhYy00MTAyLWIyZjEtNjgyMGEwZmRiZWFmIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
-      { nome: "ESCRITÓRIOS DE VENDAS", url: "https://fluxoescritoriosplanejar.netlify.app/" }
+      { nome: "ESCRITÓRIOS DE VENDAS", url: "https://fluxodiretoria-planejarengenharia.netlify.app/" }
     ]
   },
   {
@@ -76,7 +76,7 @@ window.usuarios = [
       { nome: "CONTÁBIL", url: "https://app.powerbi.com/view?r=eyJrIjoiMDNhZDc0NWItMzQ2Ny00N2I2LWE0ZGMtY2YyZGUyMTRkNTY4IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
       { nome: "SUPRIMENTOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMzZkNGZiNGItNzQ5Yi00OWQ5LWEwMGMtZDEwYzYyYjkzZWM5IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
       { nome: "ESTOQUE", url: "https://app.powerbi.com/view?r=eyJrIjoiMjlkMmQ5YTItZjRhYy00MTAyLWIyZjEtNjgyMGEwZmRiZWFmIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
-      { nome: "ESCRITÓRIOS DE VENDAS", url: "https://fluxoescritoriosplanejar.netlify.app/" }
+      { nome: "ESCRITÓRIOS DE VENDAS", url: "https://fluxodiretoria-planejarengenharia.netlify.app/" }
     ]
   },
   {
