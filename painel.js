@@ -17,7 +17,8 @@ window.PAINEL_ICONES = {
   livro:       '<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>',
   caixa:       '<path d="M16.5 9.4l-9-5.19"/><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12"/>',
   prancheta:   '<path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>',
-  loja:        '<path d="M3 9l1.5-5.5h15L21 9"/><path d="M3 9a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0"/><path d="M4.5 10.9V20a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1v-9.1"/><path d="M9.5 21v-6h5v6"/>'
+  loja:        '<path d="M3 9l1.5-5.5h15L21 9"/><path d="M3 9a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0"/><path d="M4.5 10.9V20a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1v-9.1"/><path d="M9.5 21v-6h5v6"/>',
+  sol:         '<circle cx="12" cy="12" r="4.2"/><path d="M12 1.6v2.4M12 20v2.4M4.65 4.65l1.7 1.7M17.65 17.65l1.7 1.7M1.6 12h2.4M20 12h2.4M4.65 19.35l1.7-1.7M17.65 6.35l1.7-1.7"/>'
 };
 
 window.PAINEL_META = {
@@ -31,7 +32,9 @@ window.PAINEL_META = {
   "SUPRIMENTOS":       { area:"Compras",       icone:"caixa",       cor:"#ea580c", corLuz:"#fdeee3" },
   "ESTOQUE":           { area:"Almoxarifado",  icone:"prancheta",   cor:"#0891b2", corLuz:"#e0f4f9" },
 
-  "ESCRITÓRIOS DE VENDAS": { area:"Fluxo financeiro", icone:"loja", cor:"#e11d48", corLuz:"#fdeaef" }
+  "ESCRITÓRIOS DE VENDAS": { area:"Fluxo financeiro", icone:"loja", cor:"#e11d48", corLuz:"#fdeaef" },
+
+  "CONTROLE DAS USINAS FOTOVOLTAICAS": { area:"Energia solar", icone:"sol", cor:"#a16207", corLuz:"#faf0d7" }
 };
 
 /* Padrão para painel que não esteja no mapa acima */
