@@ -51,6 +51,22 @@ window.usuarios = [
     ]
   },
   {
+    usuario: "sergio.moreira",
+    senha: "540915",
+    paineis: [
+      { nome: "RESULTADO", url: "https://app.powerbi.com/view?r=eyJrIjoiZDU5OWYwYWEtNzZlOS00YjNkLWJhMjUtYmVjOGQ1ZjZlMWFhIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
+      { nome: "COMERCIAL", url: "https://app.powerbi.com/view?r=eyJrIjoiNjcwMDcwYzEtYzk2ZS00NjYyLTg4MjctOGFjYmI1ZTU3NzQzIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
+      { nome: "PLAN TOWER COLINA", url: "https://app.powerbi.com/view?r=eyJrIjoiNDgyMDcwODAtNmE4Ni00YzFkLThiOGMtMTQ3Yjc5OWM0MzFlIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
+      { nome: "LANÇAMENTO", url: "https://app.powerbi.com/view?r=eyJrIjoiYTE3ZDY2ZjUtY2I5NS00YmMyLThkOTktMWJhNzE1ZGIzM2Y3IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
+      { nome: "FINANCEIRO", url: "https://app.powerbi.com/view?r=eyJrIjoiZTM5ZWMzOWMtNmFiZi00MDhmLTk3YjItZmQ0OGU5NTM4MjE2IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
+      { nome: "FOLHA", url: "https://app.powerbi.com/view?r=eyJrIjoiNWVkMTdkZTgtOTMxNy00ZWJlLWE1ZjItODIyZTE1NjhkZmIxIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
+      
+      { nome: "ESTOQUE", url: "https://app.powerbi.com/view?r=eyJrIjoiMjlkMmQ5YTItZjRhYy00MTAyLWIyZjEtNjgyMGEwZmRiZWFmIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
+      { nome: "ESCRITÓRIOS DE VENDAS", url: "https://fluxodiretoria-planejarengenharia.netlify.app/"},
+      { nome: "CONTROLE DAS USINAS FOTOVOLTAICAS", url: "https://app.powerbi.com/view?r=eyJrIjoiOWNkYjE5ZmEtYzk1Ny00ODM3LWE4NjEtYTcyYmQ4MDc2MGRkIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" }
+    ]
+  },
+  {
     usuario: "william.caldeira",
     senha: "026908",
     paineis: [
