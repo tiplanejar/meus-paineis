@@ -13,7 +13,8 @@ window.usuarios = [
       { nome: "SUPRIMENTOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMzZkNGZiNGItNzQ5Yi00OWQ5LWEwMGMtZDEwYzYyYjkzZWM5IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
       { nome: "ESTOQUE", url: "https://app.powerbi.com/view?r=eyJrIjoiMjlkMmQ5YTItZjRhYy00MTAyLWIyZjEtNjgyMGEwZmRiZWFmIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
       { nome: "ESCRITÓRIOS DE VENDAS", url: "https://fluxodiretoria-planejarengenharia.netlify.app/"},
-      { nome: "CONTROLE DAS USINAS FOTOVOLTAICAS", url: "https://app.powerbi.com/view?r=eyJrIjoiOWNkYjE5ZmEtYzk1Ny00ODM3LWE4NjEtYTcyYmQ4MDc2MGRkIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" }
+      { nome: "CONTROLE DAS USINAS FOTOVOLTAICAS", url: "https://app.powerbi.com/view?r=eyJrIjoiOWNkYjE5ZmEtYzk1Ny00ODM3LWE4NjEtYTcyYmQ4MDc2MGRkIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
+      { nome: "INADIMPLÊNCIA X PREVISÃO", url: "https://inadimplencia-planejarengenharia.netlify.app/" }
     ]
   },
   {
@@ -30,7 +31,8 @@ window.usuarios = [
       { nome: "SUPRIMENTOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMzZkNGZiNGItNzQ5Yi00OWQ5LWEwMGMtZDEwYzYyYjkzZWM5IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
       { nome: "ESTOQUE", url: "https://app.powerbi.com/view?r=eyJrIjoiMjlkMmQ5YTItZjRhYy00MTAyLWIyZjEtNjgyMGEwZmRiZWFmIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
       { nome: "ESCRITÓRIOS DE VENDAS", url: "https://fluxodiretoria-planejarengenharia.netlify.app/" },
-      { nome: "CONTROLE DAS USINAS FOTOVOLTAICAS", url: "https://app.powerbi.com/view?r=eyJrIjoiOWNkYjE5ZmEtYzk1Ny00ODM3LWE4NjEtYTcyYmQ4MDc2MGRkIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" }
+      { nome: "CONTROLE DAS USINAS FOTOVOLTAICAS", url: "https://app.powerbi.com/view?r=eyJrIjoiOWNkYjE5ZmEtYzk1Ny00ODM3LWE4NjEtYTcyYmQ4MDc2MGRkIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
+      { nome: "INADIMPLÊNCIA X PREVISÃO", url: "https://inadimplencia-planejarengenharia.netlify.app/" }
     ]
   },
   {
@@ -47,7 +49,8 @@ window.usuarios = [
       { nome: "SUPRIMENTOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMzZkNGZiNGItNzQ5Yi00OWQ5LWEwMGMtZDEwYzYyYjkzZWM5IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
       { nome: "ESTOQUE", url: "https://app.powerbi.com/view?r=eyJrIjoiMjlkMmQ5YTItZjRhYy00MTAyLWIyZjEtNjgyMGEwZmRiZWFmIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
       { nome: "ESCRITÓRIOS DE VENDAS", url: "https://fluxodiretoria-planejarengenharia.netlify.app/" },
-      { nome: "CONTROLE DAS USINAS FOTOVOLTAICAS", url: "https://app.powerbi.com/view?r=eyJrIjoiOWNkYjE5ZmEtYzk1Ny00ODM3LWE4NjEtYTcyYmQ4MDc2MGRkIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" }
+      { nome: "CONTROLE DAS USINAS FOTOVOLTAICAS", url: "https://app.powerbi.com/view?r=eyJrIjoiOWNkYjE5ZmEtYzk1Ny00ODM3LWE4NjEtYTcyYmQ4MDc2MGRkIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
+      { nome: "INADIMPLÊNCIA X PREVISÃO", url: "https://inadimplencia-planejarengenharia.netlify.app/" }
     ]
   },
   {
@@ -63,7 +66,8 @@ window.usuarios = [
       
       { nome: "ESTOQUE", url: "https://app.powerbi.com/view?r=eyJrIjoiMjlkMmQ5YTItZjRhYy00MTAyLWIyZjEtNjgyMGEwZmRiZWFmIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
       { nome: "ESCRITÓRIOS DE VENDAS", url: "https://fluxodiretoria-planejarengenharia.netlify.app/"},
-      { nome: "CONTROLE DAS USINAS FOTOVOLTAICAS", url: "https://app.powerbi.com/view?r=eyJrIjoiOWNkYjE5ZmEtYzk1Ny00ODM3LWE4NjEtYTcyYmQ4MDc2MGRkIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" }
+      { nome: "CONTROLE DAS USINAS FOTOVOLTAICAS", url: "https://app.powerbi.com/view?r=eyJrIjoiOWNkYjE5ZmEtYzk1Ny00ODM3LWE4NjEtYTcyYmQ4MDc2MGRkIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
+      { nome: "INADIMPLÊNCIA X PREVISÃO", url: "https://inadimplencia-planejarengenharia.netlify.app/" }
     ]
   },
   {
@@ -80,7 +84,8 @@ window.usuarios = [
       { nome: "SUPRIMENTOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMzZkNGZiNGItNzQ5Yi00OWQ5LWEwMGMtZDEwYzYyYjkzZWM5IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
       { nome: "ESTOQUE", url: "https://app.powerbi.com/view?r=eyJrIjoiMjlkMmQ5YTItZjRhYy00MTAyLWIyZjEtNjgyMGEwZmRiZWFmIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
       { nome: "ESCRITÓRIOS DE VENDAS", url: "https://fluxodiretoria-planejarengenharia.netlify.app/" },
-      { nome: "CONTROLE DAS USINAS FOTOVOLTAICAS", url: "https://app.powerbi.com/view?r=eyJrIjoiOWNkYjE5ZmEtYzk1Ny00ODM3LWE4NjEtYTcyYmQ4MDc2MGRkIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" }
+      { nome: "CONTROLE DAS USINAS FOTOVOLTAICAS", url: "https://app.powerbi.com/view?r=eyJrIjoiOWNkYjE5ZmEtYzk1Ny00ODM3LWE4NjEtYTcyYmQ4MDc2MGRkIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
+      { nome: "INADIMPLÊNCIA X PREVISÃO", url: "https://inadimplencia-planejarengenharia.netlify.app/" }
     ]
   },
   {
@@ -97,7 +102,8 @@ window.usuarios = [
       { nome: "SUPRIMENTOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMzZkNGZiNGItNzQ5Yi00OWQ5LWEwMGMtZDEwYzYyYjkzZWM5IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
       { nome: "ESTOQUE", url: "https://app.powerbi.com/view?r=eyJrIjoiMjlkMmQ5YTItZjRhYy00MTAyLWIyZjEtNjgyMGEwZmRiZWFmIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
       { nome: "ESCRITÓRIOS DE VENDAS", url: "https://fluxodiretoria-planejarengenharia.netlify.app/" },
-      { nome: "CONTROLE DAS USINAS FOTOVOLTAICAS", url: "https://app.powerbi.com/view?r=eyJrIjoiOWNkYjE5ZmEtYzk1Ny00ODM3LWE4NjEtYTcyYmQ4MDc2MGRkIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" }
+      { nome: "CONTROLE DAS USINAS FOTOVOLTAICAS", url: "https://app.powerbi.com/view?r=eyJrIjoiOWNkYjE5ZmEtYzk1Ny00ODM3LWE4NjEtYTcyYmQ4MDc2MGRkIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
+      { nome: "INADIMPLÊNCIA X PREVISÃO", url: "https://inadimplencia-planejarengenharia.netlify.app/" }
     ]
   },
   {
@@ -114,7 +120,8 @@ window.usuarios = [
       { nome: "SUPRIMENTOS", url: "https://app.powerbi.com/view?r=eyJrIjoiMzZkNGZiNGItNzQ5Yi00OWQ5LWEwMGMtZDEwYzYyYjkzZWM5IiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
       { nome: "ESTOQUE", url: "https://app.powerbi.com/view?r=eyJrIjoiMjlkMmQ5YTItZjRhYy00MTAyLWIyZjEtNjgyMGEwZmRiZWFmIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
       { nome: "ESCRITÓRIOS DE VENDAS", url: "https://fluxodiretoria-planejarengenharia.netlify.app/" },
-      { nome: "CONTROLE DAS USINAS FOTOVOLTAICAS", url: "https://app.powerbi.com/view?r=eyJrIjoiOWNkYjE5ZmEtYzk1Ny00ODM3LWE4NjEtYTcyYmQ4MDc2MGRkIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" }
+      { nome: "CONTROLE DAS USINAS FOTOVOLTAICAS", url: "https://app.powerbi.com/view?r=eyJrIjoiOWNkYjE5ZmEtYzk1Ny00ODM3LWE4NjEtYTcyYmQ4MDc2MGRkIiwidCI6Ijk5NmI0YjdhLWM0NzEtNGQ1Yy1hMTY1LTI5NDIwYzIyNmM3YiJ9" },
+      { nome: "INADIMPLÊNCIA X PREVISÃO", url: "https://inadimplencia-planejarengenharia.netlify.app/" }
     ]
   },
   {
